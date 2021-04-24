@@ -45,3 +45,29 @@ Frontend Svelte server (port 8080):
 - Use the buildpack [negativetwelve/heroku-buildpack-subdir](https://github.com/negativetwelve/heroku-buildpack-subdir):  
 ```$ heroku buildpacks:set https://github.com/negativetwelve/heroku-buildpack-subdir```
 - This uses the `.buildpacks` definition in the app root
+
+
+## Running local dev server
+
+```
+$ conda activate django-svelte
+$ pip install -r requirements.txt
+$ source setup.sh
+$ python backend/manage.py runserver --settings=backend.settings.dev`
+```
+
+```
+(base) hobs@tangibleai-laptop:~/code/tangibleai/django-svelte$ cd frontend
+(base) hobs@tangibleai-laptop:~/code/tangibleai/django-svelte/frontend$ npm install
+
+up to date, audited 1 package in 163ms
+
+found 0 vulnerabilities
+(base) hobs@tangibleai-laptop:~/code/tangibleai/django-svelte/frontend$ npm run dev
+npm ERR! missing script: dev
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/hobs/.npm/_logs/2021-04-24T04_46_16_381Z-debug.log
+(base) hobs@tangibleai-laptop:~/code/tangibleai/django-svelte/frontend$ npm run
+(base) hobs@tangibleai-laptop:~/code/tangibleai/django-svelte/frontend$ 
+```
