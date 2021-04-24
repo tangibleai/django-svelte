@@ -1,0 +1,8 @@
+django
+django-extensions
+dj-database-url
+django-rest-framework
+djangorestframework-jwt
+django-cors-headers
+gunicorn
+whitenoise

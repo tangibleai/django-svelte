@@ -5,8 +5,10 @@ from backend.settings import *
 # that we actually use the * import for something
 assert SECURE_SSL_REDIRECT
 
+# SECRET_KEY = r'@qa&1-#)+zb9#8r1(v+aj_t1tkxua+9@h9trfu+b@0^&55zh(g'
 SECURE_SSL_REDIRECT = False
 debug = True
+# DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
